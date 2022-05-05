@@ -1,0 +1,55 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #nav {
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    #nav {
+        display: inline;
+    }
+    #nav li {
+        display: none;
+    }
+    #nav .logo-mc {
+        float: left;
+        margin-left: 20px;
+    }
+    .mobile-menu {
+        display: inline;
+        float: right;
+        line-height: 65px;
+        font-size: 25px;
+        padding: 0 24px;
+        color: #00285e;
+    }
+    .mobile-menu:hover {
+        background-color: rgb(68, 149, 255);
+    }
+    .login {
+        display: inline;
+        float: right;
+        line-height: 65px;
+        position: relative;
+    }
+    #slider {
+        max-width: 100%;
+    }
+    .history-list {
+        justify-content: space-around;
+    }
+    .cards {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+}
+
+
