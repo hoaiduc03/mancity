@@ -1,0 +1,295 @@
+/* Common */
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.color-tim
+{
+    color: #00285e; 
+}
+.login {
+    font-weight: 400 !important;
+    font-size: 23px;
+}
+:root {
+    --color-xanh: #98c5e9;
+    --color-tim: #00285e;
+
+}
+/* End Main */
+
+/* Header */
+#header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 65px;
+    background-color: var(--color-xanh);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo-mc {
+    display: flex;
+    width: 53x;
+    height: 53px;
+}
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: 750;
+    cursor: pointer; 
+}
+#nav li a:hover {
+    text-decoration: underline;
+}
+#nav a {
+    text-decoration: none;
+    padding: 0 24px;
+    color: var(--color-tim);
+    text-transform: uppercase;
+}
+.mobile-menu {
+    display: none;
+}
+/* End Header */
+
+/* Begin Slider */
+.img {
+    margin-top: 65px;
+    width: 100%;
+}    
+/* End Slider */
+
+/* Content */
+.content-heading {
+    font-size: 30px;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#history,
+#stadium .stadium-section,
+#club .club-section {
+    padding: 64px 7%;
+    width: 1000px;
+    max-width: 100%;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+#stadium .stadium-text {
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/* Club */
+.about-club {
+    background-color: #ecf5fd;
+}
+.cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    width: calc(25%-10px);
+    margin: 20px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-title {
+    font-size: 25px;
+    color: var(--color-xanh);
+    margin-top: 40px;
+}
+.card-img {
+    height: 180px;
+    background-color: #b0cfe7;
+
+}
+.card-img:hover {
+    background-color: var(--color-xanh);
+    cursor: pointer;
+}
+.card-heading {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-tim);
+    background-color: #fff;
+}
+.card-heading:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* End Club */
+
+/* History */
+.history-title {
+    font-size: 20px;
+    margin: 30px 0 10px 0;
+}
+.history-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+.history-img {
+    width: 100px;
+    height: auto;
+}
+.history-img:hover {
+    cursor: pointer;
+}
+/* End History */
+/* End Content */
+
+/* Footer */
+.partners-section {
+    position: relative;
+    padding: 24px 7%;
+}
+.partners-section:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    background-size: 5px 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPUlEQVQYlWMsevn/PwMDA0OvGAMjAx7AhE8SGTD+hxiIExS/YvhPkokshEyCuZ18E9FNggHSTcRlEskmAgD7MBJvQ1V/KQAAAABJRU5ErkJggg==);
+}
+.partners-section .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partners-section .partners-list-item {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 4px;
+    width: 80px;
+    height: 48px;
+}
+#footer {
+    padding: 32px 16px;
+    text-align: center;
+    background-color: var(--color-xanh);
+    width: 100%;
+}
+#footer .socials-list {
+    font-size: 24px;
+}
+#footer .socials-list a {
+    color: #fff;
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    color: var(--color-tim);
+}
+#footer .copyright {
+    margin-top: 15px;
+    color: #000;
+}
+#footer .copyright a {
+    color: #000;
+}
+/* End Footer */
+
+/* Form */
+.form {
+    position: fixed;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.form.open {
+    display: inline;
+}
+.form-body{
+    position: absolute;
+    right: 0; left: 0;
+    top: 0; bottom: 0;
+    width: 350px;
+    height: fit-content;
+    margin: auto; 
+    padding: 24px;
+    font-size: 14px;
+    background-color: white;
+}
+.form-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 10px;
+    opacity: 0.9;
+}
+.form-close:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+}
+.form__header{
+    text-align: center;
+}
+.form__header h3{
+    padding: 12px 0;
+}
+
+/* Form group */
+.form-group{
+    padding: 8px 0;
+}
+.form-group label{
+    display: block;
+    font-weight: bold;
+    
+}
+.form-group input{
+    padding: 8px;
+    width: 100%;
+    margin: 4px 0;
+}
+/* .form-group input[type='radio']{
+    width: initial;
+} */
+button[type="submit"]{
+    margin-top: 24px;
+    padding: 12px;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    background-color: #b0cfe7;
+    color: white;
+}
+button[type="submit"]:hover{
+    background-color: var(--color-xanh);
+}
+/* END */

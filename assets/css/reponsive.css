@@ -1,0 +1,62 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #nav, .login {
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    #nav {
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        line-height: 65px;
+        padding: 15px;
+        right: 0;
+        width: auto;
+        height: 100%;
+        background-color: var(--color-xanh); 
+    }
+    .tasbar {
+        position: fixed;
+        background: rgba(0,0,0,0.4);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
+    .tasbar.open {
+        display: inline;
+    }
+    #nav a {
+        color: #fff;
+    }
+    .mobile-menu {
+        display: block;
+        float: right;
+        line-height: 65px;
+        font-size: 25px;
+        padding: 0 24px;
+        color: #fff;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    .mobile-menu:hover {
+        background-color: rgb(68, 149, 255);
+    }
+    .cards {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    } 
+}
+
+
